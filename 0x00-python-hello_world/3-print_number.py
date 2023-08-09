@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-number = 98
-print(f'{number!s} Battery street')
+number = "H"
+print(f'{int(number)} Battery street')
