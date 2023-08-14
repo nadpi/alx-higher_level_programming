@@ -2,7 +2,7 @@
 def add_tuple(tuple_a=(), tuple_b=()):
     newt = ()
     for i in range(2):
-        if tuple_a[i]:
+        if tuple_a[i] != 0:
             if i < len(tuple_b):
                 newt = newt+((tuple_a[i]+tuple_b[i]), )
             else:
