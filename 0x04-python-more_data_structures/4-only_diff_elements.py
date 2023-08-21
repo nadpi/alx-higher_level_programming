@@ -11,6 +11,9 @@ def only_diff_elements(set_1, set_2):
                     newset.add(i)
             return newset
         else:
-            return set_2
+            return set_1
     else:
-        return set_1
+        if set_2:
+            return set_2
+        else:
+            return set_1
