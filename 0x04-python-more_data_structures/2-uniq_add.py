@@ -4,12 +4,11 @@ def uniq_add(my_list=[]):
     flag = True
     if my_list:
         for i in range(len(my_list)):
+            flag = True
             for j in range(i + 1, len(my_list)):
                 if my_list[i] == my_list[j]:
                     flag = False
                     break
-                else:
-                    flag = True
             if flag:
                 sums += my_list[i]
         return sums
