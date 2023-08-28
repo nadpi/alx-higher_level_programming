@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
     try:
-        print("{:d}".format(value))
-    except ValueError:
+        try:
+            print("{:d}".format(value))
+        except ValueError:
+            return False
+        return True
+    except:
         return False
-    return True
