@@ -10,23 +10,8 @@ class Square:
 
 
     def __init__(self, size=0):
-        self.__size = size
-
-    @property
-    def size(self):
-        """ size: size
-
-        size must be an integer,
-        otherwise raise a TypeError except. with the msg size must be an integer
-        if size is less than 0,
-        raise a ValueError exception with the message size must be >= 0
-        """
-        return self.__size
-
-    @size.setter
-    def size(self, value):
-        if not isinstance(value, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        self.__size = size
