@@ -4,4 +4,6 @@ available attributes and methods of an object """
 
 
 def lookup(obj):
-    return dir(obj)
+    """ Prototype: def lookup(obj):
+    Returns a list object """
+    return list(dir(obj))
