@@ -15,8 +15,9 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
-    """ class Rectangle that inherits from BaseGeometry 
+    """ class Rectangle that inherits from BaseGeometry
     Attributes:
     width (int): width
     hieght(int): height
