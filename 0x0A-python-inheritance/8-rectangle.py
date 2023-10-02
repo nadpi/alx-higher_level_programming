@@ -2,7 +2,7 @@
 """ A class """
 
 
-class BaseGeometry:
+class BaseGeometry(object):
     """ class BaseGeometry that has a public instance mtehod
     which raise an exception"""
 
