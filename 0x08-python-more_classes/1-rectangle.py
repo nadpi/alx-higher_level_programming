@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """ class rect 
+    """ class rect
     Attributes:
     width (int): width of rect
     height (int): heihgt of rect
