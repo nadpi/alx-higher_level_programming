@@ -1,4 +1,4 @@
-#!?usr/bin/python3
+#!/usr/bin/python3
 """ a func that returns true  if the object is exactly an instance
 of the specified class ; otherwise False."""
 
