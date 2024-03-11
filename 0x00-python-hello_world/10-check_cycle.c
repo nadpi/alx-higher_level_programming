@@ -11,7 +11,7 @@ int check_cycle(listint_t *list)
 
 	while (current->next != NULL)
 	{
-		if (current->next->n == list->n && current->next->next == list->next)
+		if (check_if(list, current->next) && current->next->next == list->next)
 			return (1);
 		current = current->next;
 	}
@@ -26,7 +26,7 @@ int check_if(listint_t *head, listint_t *current)
 {
 	listint_t *temp = head;
 
-	while (current != temp)
+	while (temp->next != NULL)
 	{
 		if (current->n == temp->n)
 			return (1);
