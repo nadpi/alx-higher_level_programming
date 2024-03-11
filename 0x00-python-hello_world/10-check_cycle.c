@@ -17,3 +17,20 @@ int check_cycle(listint_t *list)
 	}
 	return (0);
 }
+/**
+ * check_if - checks if node value was in the previous nodes
+ * @head: head
+ * Return: 0 or 1
+ */
+int check_if(listint_t *head, listint_t *current)
+{
+	listint_t *temp = head;
+
+	while (current != temp)
+	{
+		if (current->n == temp->n)
+			return (1);
+		temp = temp->next;
+	}
+	return (0);
+}
