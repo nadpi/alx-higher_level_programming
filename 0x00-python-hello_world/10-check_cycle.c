@@ -26,7 +26,7 @@ int check_if(listint_t *head, listint_t *current)
 {
 	listint_t *temp = head;
 
-	while (current != NULL)
+	while (temp != NULL)
 	{
 		if (current->n == temp->n)
 			return (1);
