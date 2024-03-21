@@ -2,7 +2,7 @@
 def best_score(a_dictionary):
     if a_dictionary is None:
         return None
-    maxnum = next(iter(a_dictionary.values()))
+    maxnum = 0
     whomaxnum = ""
     for i in a_dictionary:
         if a_dictionary[i] > maxnum:
