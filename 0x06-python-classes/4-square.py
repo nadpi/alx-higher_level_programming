@@ -15,8 +15,8 @@ class Square:
         ''' 
         size must be an integer, otherwise raise a TypeError
         exception with the message size must be an integer
-        if size is less than 0, raise a ValueError exception
-        with the message size must be >= 0'''
+        if size is less than 0, raise a ValueError
+        exception with the message size must be >= 0'''
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
@@ -25,7 +25,7 @@ class Square:
 
     @property
     def size(self):
-        ''' retrieve size'''
+        ''' return size '''
         return self.__size
 
     def area(self):
