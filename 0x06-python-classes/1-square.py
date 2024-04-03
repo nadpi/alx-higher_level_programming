@@ -3,9 +3,9 @@
 
 
 class Square:
-    ''' A square class that has
-    Attributes:
-        size(int): size
+    ''' MyClass square
+    Args:
+        size (int): size
     '''
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         self.__size = size
