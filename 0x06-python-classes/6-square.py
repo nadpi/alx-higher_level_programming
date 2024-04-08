@@ -39,7 +39,7 @@ class Square:
         '''position must be a tuple of 2 positive integers,
         otherwise raise a TypeError exception
         with the message position must be a tuple of 2 positive integers'''
-        if type(value) is not tuple and len(value) != 2:
+        if type(value) is not tuple or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             for i in range(len(value)):
