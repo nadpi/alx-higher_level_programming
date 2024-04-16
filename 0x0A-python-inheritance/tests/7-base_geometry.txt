@@ -50,3 +50,4 @@ TypeError: None must be an integer
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("width", 89)
 >>> print(bg.value)
+89
