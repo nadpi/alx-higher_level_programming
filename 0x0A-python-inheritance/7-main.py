@@ -3,8 +3,9 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 bg = BaseGeometry()
 
-bg.integer_validator(None, None)
+bg.integer_validator(None,13)
 bg.integer_validator("width", 89)
+print(bg.value)
 
 try:
     bg.integer_validator("name", "John")
