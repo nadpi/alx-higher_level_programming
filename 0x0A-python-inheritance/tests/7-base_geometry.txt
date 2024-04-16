@@ -37,3 +37,8 @@ TypeError: my_int must be an integer
 >>> bg.integer_validator("my_int", -10.12)
 Traceback (most recent call last):
 TypeError: my_int must be an integer
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
