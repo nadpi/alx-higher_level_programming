@@ -3,7 +3,7 @@ import unittest
 from models.base import Base
 
 
-class TestMaxInteger(unittest.TestCase):
+class TestBaseClass(unittest.TestCase):
 	def oneBase(self):
 		self.b1 = Base()
 	def TwoBase(self):
