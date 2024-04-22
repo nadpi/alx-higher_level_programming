@@ -5,6 +5,7 @@
 class Base:
     '''class base'''
     __nb_objects = 0
+
     def __init__(self, id=None):
         if id:
             self.id = id
