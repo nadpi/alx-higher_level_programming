@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 import unittest
 from models.base import Base
+import os
 
 class TestBaseClass(unittest.TestCase):
     def testoneBase(self):
         self.b1 = Base()
+        self.assertEqual(b1.id, 1)
 
     def testTwoBase(self):
         self.b2 = Base()
