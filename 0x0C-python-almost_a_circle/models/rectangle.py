@@ -124,11 +124,11 @@ class Rectangle(Base):
                     self.id = v
 
     def to_dictionary(self):
-            '''ret dict'''
-            rectDict = {}
-            rectDict["id"] = self.id
-            rectDict["width"] = self.__width
-            rectDict["height"] = self.__height
-            rectDict["x"] = self.__x
-            rectDict["y"] = self.__y
-            return rectDict
+        '''ret dict'''
+        rectDict = {}
+        rectDict["id"] = self.id
+        rectDict["width"] = self.__width
+        rectDict["height"] = self.__height
+        rectDict["x"] = self.__x
+        rectDict["y"] = self.__y
+        return rectDict
