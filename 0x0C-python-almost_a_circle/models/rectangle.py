@@ -90,3 +90,22 @@ class Rectangle(Base):
         strtoret += str(self.__x)+"/"+str(self.__y)+" - "
         strtoret += str(self.__width)+"/"+str(self.__height)
         return strtoret
+
+    def update(self, *args):
+        '''update'''
+        lenofargs = len(args)
+        cnt = 0
+        if cnt < lenofargs:
+            self.id = args[cnt]
+            cnt += 1
+        if cnt < lenofargs:
+            self.__width = args[cnt]
+            cnt += 1
+        if cnt < lenofargs:
+            self.__height = args[cnt]
+            cnt += 1
+        if cnt < lenofargs:
+            self.__x = args[cnt]
+            cnt += 1
+        if cnt < lenofargs:
+            self.__y = args[cnt]
