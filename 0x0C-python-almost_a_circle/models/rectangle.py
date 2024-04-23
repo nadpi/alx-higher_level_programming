@@ -111,14 +111,14 @@ class Rectangle(Base):
             if cnt < lenofargs:
                 self.__y = args[cnt]
         else:
-            for k,v in kwargs.items():
+            for k, v in kwargs.items():
                 if k == "height":
                     self.__height = v
-                if k == "width":
+                elif k == "width":
                     self.__width = v
-                if k == "x":
+                elif k == "x":
                     self.__x = v
-                if k == "y":
+                elif k == "y":
                     self.__y = v
-                if k == "id":
+                elif k == "id":
                     self.id = v
