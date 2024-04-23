@@ -78,3 +78,10 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        '''str'''
+        strtoret = "[Rectangle] "+"("+str(self.id)+") "
+        strtoret += str(self.__x)+"/"+str(self.__y)+" - "
+        strtoret += str(self.__width)+"/"+str(self.__height)
+        return strtoret
