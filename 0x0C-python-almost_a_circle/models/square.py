@@ -55,3 +55,12 @@ class Square(Rectangle):
                     self.y = v
                 elif k == "id":
                     self.id = v
+
+    def to_dictionary(self):
+        '''ret dict'''
+        squareDict = {}
+        squareDict["id"] = self.id
+        squareDict["size"] = self.width
+        squareDict["x"] = self.x
+        squareDict["y"] = self.y
+        return squareDict
