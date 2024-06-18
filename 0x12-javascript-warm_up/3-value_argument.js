@@ -7,8 +7,5 @@ argv.forEach((index) => {
 if (cnt === 2) {
   console.log('No argument');
 } else {
-  let i = 0;
-  for (i = 2; i < cnt; i++) {
-    console.log(argv[i]);
-  }
+  console.log(argv[2]);
 }
