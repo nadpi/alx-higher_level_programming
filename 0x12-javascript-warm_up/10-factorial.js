@@ -1,11 +1,11 @@
 #!/usr/bin/node
 const { argv } = require('node:process');
-let num = Number(argv[2]);
+const num = Number(argv[2]);
 function fact (num) {
-  let factorial = 1;
-  for (num; num > 0; num--) {
-    factorial *= num;
- }
-  return factorial;
+  if (num === 0) {
+    return 1;
+  } else {
+    return num * fact(num - 1);
+  }
 }
 console.log(fact(num));
