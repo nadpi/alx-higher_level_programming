@@ -11,7 +11,7 @@ if (argv.length < 4) {
   }
   let secbig = 0;
   for (let i = 2; i < argv.length; i++) {
-    if (Number(argv[i]) > secbig && Number(argv[i]) !== big) {
+    if (Number(argv[i]) > secbig && Number(argv[i]) < big) {
       secbig = argv[i];
     }
   }
